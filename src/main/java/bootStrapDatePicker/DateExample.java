@@ -17,8 +17,6 @@ public class DateExample extends TestBase {
 	final String Jan2 = "January";
 	final String Jan3 = "January2";
 	final String Jan4 = "January";
-	final String Feb1 ="February";
-	final String Feb2 ="February";
 	
 	final String Feb ="February";
 	final String Mar ="March";
