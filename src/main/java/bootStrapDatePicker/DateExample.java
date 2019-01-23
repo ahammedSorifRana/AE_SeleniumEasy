@@ -26,14 +26,17 @@ public class DateExample extends TestBase {
 	final String May ="May";
 	final String Jun ="June";
 	final String Jul ="July";
-	final String Jul2 ="July_Conflict";
+	final String Jul2 ="JulyFirst";
+
 	final String Agu ="August";
 	final String Sep ="September";
 	final String Oct ="October";
 	final String Nov ="November";
 	final String Dec ="December";
+
 	final String Dec2 ="December";
 	final String Dec3 ="December";
+
 	final String Dec4 ="December";
 	
 	@FindBy(css=".input-group-addon")
