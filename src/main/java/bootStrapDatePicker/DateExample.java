@@ -43,35 +43,4 @@ public class DateExample extends TestBase {
 	final String Dec38 ="December";
 
 }
-	
 
-
-
-
-
- /*
-  * List<WebElement> allDates = Driver.findElements(By.xpath("html/body/div[3]/div[1]/table/tbody/tr/td"));
-		for(WebElement xdate : allDates) {
-			String DateValue = xdate.getText();
-			System.out.println(DateValue);
-			System.out.println("Input Date " + Date);
-			Select xValue = new Select(xdate);
-			xValue.selectByVisibleText(Date);
-		}
-  * 
-  * 
-  * int size =allDates.size();
-  */
-	/*	System.out.println(size);
-		for(WebElement dates : allDates) {
-			//boolean dateText = dates.getText().equalsIgnoreCase(Date);
-			System.out.println(dates.getText());
-			Select dText = new Select(dates);
-			dText.selectByVisibleText(Date);
-			
-			/*if(dateText== true) {
-				dates.click();
-				break;
-			}
-			
-		}*/
