@@ -26,6 +26,7 @@ public class DateExample extends TestBase {
 	final String May ="May";
 	final String Jun ="June";
 	final String Jul ="July";
+	final String Jul2 ="July_Conflict";
 	final String Agu ="August";
 	final String Sep ="September";
 	final String Oct ="October";
