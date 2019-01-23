@@ -3,8 +3,6 @@ package bootStrapDatePicker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import Test.test.seleniumEasy.BaseTest.TestBase;
 
 public class DateExample extends TestBase {
@@ -44,89 +42,8 @@ public class DateExample extends TestBase {
 	final String Dec28 ="December";
 	final String Dec38 ="December";
 
-	final String Dec4 ="December";
-	
-	@FindBy(css=".input-group-addon")
-	WebElement clickToSeeData;
-	@FindBy(css=".today")
-	WebElement clickOnToday;
-	@FindBy(css=".datepicker-switch")
-	WebElement getActualDate;
-	@FindBy(css=".prev")
-	WebElement ClickOnPrevButton;
-	@FindBy(xpath="html/body/div[3]/div[1]/table/tbody/tr/td")
-	WebElement AllDate;
-	@FindBy(css=".form-control")
-	WebElement getSelectedDate;
-	
-	
-	
-	
-	
-	
-	public void clickOnDate() {
-		clickToSeeData.click();
-	}
-	
-	
-	
-	public void actualSelectedDate() {
-		String Adate =getSelectedDate.getText();
-		System.out.println(Adate);
-		}
-	public DateExample(WebDriver Driver) {
-		
-		this.Driver = Driver;
-		PageFactory.initElements(Driver, this);
-		
-		}
-	
-	public void chooseNav() {
-		super.chosseLeftManu(super.NavDatePicker, super.Bootstrap_Date_Picker);
-		
-	}
-	public boolean chooseDate(String Month,int Year) {
-		String chooseMonth = Month+" " +Year;
-		String actualMonth =getActualDate.getText();
-		System.out.println(actualMonth);
-		if(actualMonth.equalsIgnoreCase(chooseMonth)) {
-			return true;
-			
-		}
-		else {
-			return false;
-		}
-		
-	}
-	
-	public void actualChooseDate(String Date, String Month,int Year) {
-		int count =0 ;
-		while(chooseDate(Month,Year) == false){
-			ClickOnPrevButton.click();
-			count ++;
-			
-			if(count > 500) {
-				System.out.println("Data is out of range");
-				break;
-			}
-		
-		}
-		String xDate ="html/body/div[3]/div[1]/table/tbody/tr/td[text()='"+Date+"']";
-		Driver.findElement(By.xpath(xDate)).click();
-		
-	}
-	
-	
-	
-	public void DataExampleFinal() {
-		chooseNav();
-		clickOnDate();
-		actualChooseDate("16",Jan,1990);
-		actualSelectedDate();
-
-		}
-
 }
+	
 
 
 
