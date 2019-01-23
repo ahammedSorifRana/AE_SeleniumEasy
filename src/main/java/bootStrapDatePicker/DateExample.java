@@ -31,6 +31,8 @@ public class DateExample extends TestBase {
 	final String Oct ="October";
 	final String Nov ="November";
 	final String Dec ="December";
+	final String Dec2 ="December";
+	final String Dec3 ="December";
 	
 	@FindBy(css=".input-group-addon")
 	WebElement clickToSeeData;
