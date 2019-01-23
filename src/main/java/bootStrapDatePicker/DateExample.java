@@ -14,6 +14,10 @@ public class DateExample extends TestBase {
 	WebDriver Driver;
 	
 	final String Jan = "January";
+	final String Jan2 = "January";
+	final String Jan3 = "January2";
+	final String Jan4 = "January";
+	
 	final String Feb ="February";
 	final String Mar ="March";
 	final String Apr ="April";
