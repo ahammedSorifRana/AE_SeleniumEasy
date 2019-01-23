@@ -31,6 +31,8 @@ public class DateExample extends TestBase {
 	final String Agu ="August";
 	final String Sep ="September";
 	final String Oct ="October";
+	final String Oct2 ="October";
+	final String Oct3 ="October";
 	final String Nov ="November";
 	final String Dec ="December";
 
